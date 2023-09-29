@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-size: cover;
+    height: 100vh;
+    background-image: url('background.png');
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    width: 50%;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #E63946;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+.card div{
+    margin-bottom: 50px;
+}
+
+.dice-main-div{
+    display: flex;
+    justify-content: center;
+}
+
+.dice{
+    width: 90px;
+    height: 90px;
+    background-color: #ffb1b7;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.players{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    font-size: 1.2rem;
+}
+
+.total-score{
+    padding: 20px 40px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.roll-btn{
+   justify-content: center;
+    display: flex;
+}
+.roll-btn .btn{
+    padding: 13px 40px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.roll-btn .btn:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#Winning{
+    text-align: center;
+    font-size: 2rem;
+    font-family: monospace;
+    font-weight: 900;
+    color: #0aaa0a;
+}
+
+.header{
+    font-size: 5rem;
+    text-transform: capitalize;font-weight: 600;
+    color: #03045e;
+    padding-bottom: 30px;
+}
+
+.header span{
+    color: #E63946;
+    background-color: yellow;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
