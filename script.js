@@ -6,19 +6,23 @@ const dice2e = document.querySelector('.dice2')
 
 let player1e = document.querySelector('.player1 .total-score span')
 let player2e = document.querySelector('.player2 .total-score span')
+
+const intro = document.querySelector(".intro")
+const topDiv = document.querySelector(".top-div")
 let count = 1;
 let player1 = 0
 let player2 = 0
 let randomTotal = 0
 const target = 56
+document.querySelector('.target-desc-span').innerHTML = target;
 let winningTarget = 0
 let gameWin = false
 
 
 function roll(){
     if(!gameWin){
-        dice1e.style.visibility = "visible";
-        dice2e.style.visibility = "visible";
+        topDiv.style.display = "block";
+        intro.style.display = "none"
         let random1 = Math.floor(Math.random() * 6) + 1;
         let random2 = Math.floor(Math.random() * 6) + 1;
         dice1e.innerHTML = random1
